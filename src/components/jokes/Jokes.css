@@ -1,0 +1,68 @@
+
+    /** Class for a single list container. It should be added to a div that wraps a every element for a single list.*/
+    .joke-list-container {
+      flex-basis: 45%;
+      width: 100%;
+  
+      /** Class for the count of told jokes. Add it to a <span> element within the <h2> for Told */
+      .told-count {
+        color: var(--col-5);
+      }
+  
+      /** Class for the count of untold jokes. Add it to a <span> element within the <h2> for Untold */
+      .untold-count {
+        color: var(--col-0);
+      }
+  
+      /** Adds styles for both the told-count class and the untold-count class*/
+      .told-count,
+      .untold-count {
+        float: right;
+      }
+    }
+  
+  
+  /** Class for an individual <li>*/
+  .joke-list-item {
+    border: none;
+    border-bottom: 1px solid hsla(0, 0%, 50%, 0.5);
+    margin: 5px 0;
+    padding: 5px;
+    box-sizing: border-box;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  
+    /** Class for the joke text. Add it to a <p> element*/
+    .joke-list-item-text {
+      margin: 0;
+      font-size: 0.7rem;
+      flex-basis: 75%;
+    }
+  
+    /** Classes for the action buttons. Wrap the buttons in their own div*/
+    /** The toggle class is for the buttons to mark a joke as told or untold*/
+    .joke-list-action-delete,
+    .joke-list-action-toggle {
+      border: none;
+      padding: 5px;
+      margin-left: 0.25rem;
+      background: transparent;
+      color: var(--col-4);
+    }
+  
+    /** Adds styling for when the user hovers over the delete button*/
+    .joke-list-action-delete :hover {
+      color: var(--col-0);
+      cursor: pointer;
+      transition: all 0.1s ease-in;
+    }
+  
+    /** Adds styling for when the user hovers over one of the toggle buttons*/
+    .joke-list-action-toggle :hover {
+      color: var(--col-5);
+      cursor: pointer;
+      transition: all 0.1s ease-in;
+    }
+  }
+  
